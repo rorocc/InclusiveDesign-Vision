@@ -3,6 +3,8 @@ import PageShell from './PageShell.vue'
 import { setPageContext } from './usePageContext'
 import type { PageContext } from './types'
 
+import '../assets/main.css';
+
 export { createApp }
 
 function createApp(pageContext: PageContext) {

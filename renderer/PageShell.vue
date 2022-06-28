@@ -1,55 +1,38 @@
 <template>
-  <div class="layout">
-    <div class="navigation">
-      <a href="/" class="logo">
-        <img src="./logo.svg" height="64" width="64" alt="logo" />
-      </a>
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
-    </div>
-    <div class="content"><slot /></div>
+<div class="layout text-base">
+<nav class="flex items-center justify-between flex-wrap bg-rose-700 p-6">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <span class="font-semibold text-xl tracking-tight">Inclusive Design: Sehstörungen</span>
   </div>
+  <div class="block lg:hidden">
+  </div>
+  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+    <div class="text-sm lg:flex-grow">
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4">
+        Docs
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4">
+        Examples
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
+        Blog
+      </a>
+    </div>
+  </div>
+</nav>
+  <div class="container pl-20 py-20 bg-rose-700">
+    <Masthead />
+  </div>
+    <div class="container pl-20 py-10">
+      <div class="content max-w-prose"><slot /></div>
+  </div>
+</div>
 </template>
 
 <script lang="ts" setup>
 import Link from './Link.vue'
+import Masthead from '../components/Masthead.vue';
 </script>
 
 <style>
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-* {
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-}
-</style>
-
-<style scoped>
-.layout {
-  display: flex;
-  max-width: 900px;
-  margin: auto;
-}
-.content {
-  padding: 20px;
-  border-left: 2px solid #eee;
-  padding-bottom: 50px;
-  min-height: 100vh;
-}
-.navigation {
-  padding: 20px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.8em;
-}
-.logo {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
 </style>
