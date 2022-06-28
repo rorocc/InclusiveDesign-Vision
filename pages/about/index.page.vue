@@ -4,8 +4,4 @@
 </template>
 
 <style>
-h1,
-p {
-  color: green;
-}
 </style>
