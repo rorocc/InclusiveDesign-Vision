@@ -1,0 +1,5 @@
+@import "../node_modules/typeface-dm-sans/index.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
