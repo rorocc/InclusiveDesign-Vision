@@ -1,5 +1,5 @@
 <template>
-<Layout :blurry="layoutBlurry">
+<Layout :blurry="layoutBlurry" :showReducedFov="showReducedFov">
 <nav class="flex items-center justify-between flex-wrap bg-rose-700 p-6">
   <div class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
   <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -36,8 +36,8 @@
       <p class="mb-3 tracking-tight text-white">Probiere Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus</p>
       <div>
         <SwitchButton @toggle="setBlurry($event)">Verminderte Sehschärfe</SwitchButton>
-        <SwitchButton>Verringertes Sichtfeld</SwitchButton>
-        </div>
+        <SwitchButton @toggle="showReducedFov = ! showReducedFov">Verringertes Sichtfeld</SwitchButton>
+      </div>
     </div>
   </div>
 </footer>
@@ -53,6 +53,7 @@ import Layout from '../components/Layout.vue';
 import { ref } from 'vue';
 
 const layoutBlurry = ref(false);
+const showReducedFov = ref(false);
 
 function setBlurry(isBlurry: boolean) {
   layoutBlurry.value = isBlurry;

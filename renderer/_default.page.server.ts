@@ -27,7 +27,7 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
         <meta name="description" content="${desc}" />
         <title>${title}</title>
       </head>
-      <body>
+      <body class="h-full">
         <div id="app">${dangerouslySkipEscape(appHtml)}</div>
       </body>
     </html>`
