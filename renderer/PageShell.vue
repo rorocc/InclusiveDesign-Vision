@@ -3,22 +3,23 @@
 <nav class="flex items-center justify-between flex-wrap bg-rose-700 p-6">
   <div class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
   <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <span class="font-semibold text-xl tracking-tigh">Inclusive Design: Sehstörungen</span>
+      <span class="font-semibold text-xl tracking-tight">Inclusive Design: Sehstörungen</span>
   </div>
   <div class="block lg:hidden">
     </div>
   <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
     <div class="text-sm lg:flex-grow">
-      <a href="#overview" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4">
+      <a href="#overview" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
         Welche Sehbeeinträchtigungen gibt es?
       </a>
-      <a href="#usability" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4">
+      <a href="#usability" class="block mt-4 lg:inline-block lg:mt-0  mr-4">
         Usability & Sehbeeinträchtigungen
       </a>
-      <a href="#simulation" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
+      <a href="#simulation" class="block mt-4 lg:inline-block lg:mt-0 ">
         Simulation
       </a>
     </div>
+    <ColorToggle></ColorToggle>
         </div>
   </div>
 </nav>
