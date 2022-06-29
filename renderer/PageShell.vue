@@ -9,14 +9,14 @@
     </div>
   <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
     <div class="text-sm lg:flex-grow">
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4">
-        Docs
+      <a href="#overview" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4">
+        Welche Sehbeeinträchtigungen gibt es?
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4">
-        Examples
+      <a href="#usability" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4">
+        Usability & Sehbeeinträchtigungen
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
-        Blog
+      <a href="#simulation" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
+        Simulation
       </a>
     </div>
         </div>
@@ -29,35 +29,25 @@
       <div class="content max-w-prose"><slot /></div>
   </div>
 </div>
+<footer class="w-full fixed bottom-0">
+  <div class="container mx-auto">
+    <div class="px-6 py-4 w-96 h-auto bg-rose-600 float-right shadow-xl">
+      <h3 class="font-black text-white text-xl mb-3">Simulator</h3>
+      <p class="mb-3 tracking-tight text-white">Probiere Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus</p>
+      <div>
+        <SwitchButton>Kurzsichtigkeit</SwitchButton>
+        </div>
+    </div>
+  </div>
+</footer>
 </template>
 
 <script lang="ts" setup>
 import Link from './Link.vue'
 import Masthead from '../components/Masthead.vue';
 import ColorToggle from  './ColorToggle.vue';
+import SwitchButton from '../components/SwitchButton.vue';
 </script>
 
 <style>
-
-/* Define styles for the default root window element */
-:root {
-  --background-color-primary: #ebebeb;
-  --background-color-secondary: #fafafa;
-  --accent-color: #cacaca;
-  --text-primary-color: #222;
-  --element-size: 4rem;
-}
-
-/* Define styles for the root window with dark - mode preference */
-:root.dark-theme {
-  --background-color-primary: #1e1e1e;
-  --background-color-secondary: #2d2d30;
-  --accent-color: #3f3f3f;
-  --text-primary-color: #ddd;
-}
-
-p {
-  color: var(--text-primary-color);
-}
-
 </style>
