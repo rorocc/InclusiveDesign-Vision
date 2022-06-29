@@ -1,5 +1,5 @@
 <template id="#switch-button">
-  <div class="switch-button-control">
+  <div class="switch-button-control mb-3">
     <div class="switch-button" :class="{ enabled: isEnabled }" @click="toggle" :style="{'--color': color}">
       <div class="button"></div>
     </div>
@@ -20,7 +20,7 @@ export default {
     methods: {
         toggle() {
             this.isEnabled = !this.isEnabled;
-            this.$emit("toggle", this.isEnabled);            
+            this.$emit("toggle", this.isEnabled);
         },
     },
     emits: ['toggle'],

@@ -1,5 +1,5 @@
 <template>
-<div class="layout text-base">
+<Layout :blurry="layoutBlurry">
 <nav class="flex items-center justify-between flex-wrap bg-rose-700 p-6">
   <div class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
   <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -28,14 +28,15 @@
     <div class="container mx-auto pl-20 py-10">
       <div class="content max-w-prose"><slot /></div>
   </div>
-</div>
+  </Layout>
 <footer class="w-full fixed bottom-0">
   <div class="container mx-auto">
     <div class="px-6 py-4 w-96 h-auto bg-rose-600 float-right shadow-xl">
       <h3 class="font-black text-white text-xl mb-3">Simulator</h3>
       <p class="mb-3 tracking-tight text-white">Probiere Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus</p>
       <div>
-        <SwitchButton>Kurzsichtigkeit</SwitchButton>
+        <SwitchButton @toggle="setBlurry($event)">Verminderte Sehschärfe</SwitchButton>
+        <SwitchButton>Verringertes Sichtfeld</SwitchButton>
         </div>
     </div>
   </div>
@@ -47,7 +48,22 @@ import Link from './Link.vue'
 import Masthead from '../components/Masthead.vue';
 import ColorToggle from  './ColorToggle.vue';
 import SwitchButton from '../components/SwitchButton.vue';
+import Layout from '../components/Layout.vue';
+
+import { ref } from 'vue';
+
+const layoutBlurry = ref(false);
+
+function setBlurry(isBlurry: boolean) {
+  layoutBlurry.value = isBlurry;
+}
 </script>
 
 <style>
+.layout {
+  transition: filter .5s;
+}
+.layout.blurry {
+  filter: blur(1.5px);
+}
 </style>
