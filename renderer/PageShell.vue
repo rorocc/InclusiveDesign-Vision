@@ -1,11 +1,12 @@
 <template>
 <div class="layout text-base">
 <nav class="flex items-center justify-between flex-wrap bg-rose-700 p-6">
+  <div class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
   <div class="flex items-center flex-shrink-0 text-white mr-6">
-    <span class="font-semibold text-xl tracking-tight">Inclusive Design: Sehstörungen</span>
+      <span class="font-semibold text-xl tracking-tigh">Inclusive Design: Sehstörungen</span>
   </div>
   <div class="block lg:hidden">
-  </div>
+    </div>
   <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
     <div class="text-sm lg:flex-grow">
       <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4">
@@ -18,12 +19,13 @@
         Blog
       </a>
     </div>
+        </div>
   </div>
 </nav>
-  <div class="container pl-20 py-20 bg-rose-700">
+  <div class="container pl-20 py-20 mx-auto bg-rose-700">
     <Masthead />
   </div>
-    <div class="container pl-20 py-10">
+    <div class="container mx-auto pl-20 py-10">
       <div class="content max-w-prose"><slot /></div>
   </div>
 </div>
