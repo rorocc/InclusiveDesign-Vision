@@ -3,7 +3,7 @@
     <div class="switch-button" :class="{ enabled: isEnabled }" @click="toggle" :style="{'--color': color}">
       <div class="button"></div>
     </div>
-    <div class="switch-button-label text-slate-200 font-semibold">
+    <div class="switch-button-label  font-semibold">
       <slot></slot>
     </div>
   </div>
@@ -45,7 +45,7 @@ export default {
   
   .switch-button {
     $switch-button-height: 1.6em;
-    $switch-button-color: #DDDDDD;
+    $switch-button-color: var(--text-header-color);
     $switch-button-border-thickness: 2px;
     $switch-transition: all 0.3s ease-in-out;
     $switch-is-rounded: true;

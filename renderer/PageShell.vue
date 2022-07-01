@@ -1,7 +1,7 @@
 <template>
 
 <Layout :blurry="layoutBlurry" :showReducedFov="showReducedFov">
-  <nav class="flex items-center justify-between flex-wrap bg-rose-700 p-6">
+  <nav class="flex items-center justify-between flex-wrap bg-rose-700-custom p-6">
     <div class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
         <span class="font-semibold text-xl tracking-tigh">Inclusive Design: Sehstörungen</span>
@@ -25,7 +25,7 @@
       </div>
       </div>
     </nav>
-  <div class="bg-rose-700">
+  <div class="bg-rose-700-custom">
     <div class="container mx-auto py-20">
       <Masthead />
     </div>
@@ -36,9 +36,9 @@
   </Layout>
 <footer class="w-full fixed bottom-0">
   <div class="container mx-auto">
-    <div class="px-6 py-4 w-96 h-auto bg-rose-600 float-right shadow-xl">
-      <h3 class="font-black text-white text-xl mb-3">Simulator</h3>
-      <p class="mb-3 tracking-tight text-white">Probiere Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus</p>
+    <div class="px-6 py-4 w-96 h-auto bg-rose-700-custom simulator-content float-right shadow-xl">
+      <h3 class="font-black text-xl mb-3">Simulator</h3>
+      <p class="mb-3 tracking-tight">Probiere Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus</p>
       <div>
         <SwitchButton @toggle="setBlurry($event)">Verminderte Sehschärfe</SwitchButton>
         <SwitchButton @toggle="showReducedFov = ! showReducedFov">Verringertes Sichtfeld</SwitchButton>
@@ -51,7 +51,7 @@
 <script lang="ts" setup>
 import Link from './Link.vue'
 import Masthead from '../components/Masthead.vue';
-import ColorToggle from  './ColorToggle.vue';
+import ColorToggle from  '../components/ColorToggle.vue';
 import SwitchButton from '../components/SwitchButton.vue';
 import Layout from '../components/Layout.vue';
 

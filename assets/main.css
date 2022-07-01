@@ -7,31 +7,30 @@
 /* Define styles for the default root window element */
 :root {
     --background-color-primary: #ebebeb;
-    --background-color-secondary: #fafafa;
+    --background-color-secondary: #be123c;
     --accent-color: #cacaca;
     --text-primary-color: #222;
     --element-size: 4rem;
-    --text-navbar-color: #ddd;
+    --text-header-color: #ddd;
     --text-hover-color: white;
   }
   
   /* Define styles for the root window with dark - mode preference */
   :root.dark-theme {
     --background-color-primary: #1e1e1e;
-    --background-color-secondary: #2d2d30;
+    --background-color-secondary: #be123c;
     --accent-color: #3f3f3f;
     --text-primary-color: #ddd;
-      --text-navbar-color: #222;
+      --text-header-color: #ddd;
       --text-hover-color: #2b2b2b;
   }
 
     /* Define styles for the root window with high contrast - mode preference */
     :root.high-contrast {
-        --background-color-primary: #1e1e1e;
-        --background-color-secondary: #2d2d30;
-        --accent-color: #3f3f3f;
-        --text-primary-color: #ddd;
-        --text-navbar-color: #222;
+        --background-color-primary: #000000;
+        --background-color-secondary: #E2CAD8;
+        --text-primary-color: #E2CAD8;
+        --text-header-color: #000000;
         --text-hover-color: #2b2b2b;
     }
 
@@ -42,13 +41,17 @@
   html{
       background-color: var(--background-color-primary);
   }
+
+  .bg-rose-700-custom{
+      background-color: var(--background-color-secondary);
+  }
   
-  p, h1, h2, h3 {
+  .content {
     color: var(--text-primary-color);
   }
 
-  nav,span{
-      color: var(--text-navbar-color);
+  nav, span, .title, .subject, .simulator-content, .img-placeholder{
+      color: var(--text-header-color);
   }
 
   a:hover{

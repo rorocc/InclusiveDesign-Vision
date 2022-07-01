@@ -27,6 +27,9 @@ export default {
       if (activeTheme === "light-theme") {
         this.setTheme("dark-theme");
         this.setString("Dark");
+      } else if (activeTheme === "dark-theme") {
+        this.setTheme("high-contrast");
+        this.setString("Hoher Kontrast");
       } else {
         this.setTheme("light-theme");
         this.setString("Light");
