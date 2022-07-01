@@ -80,7 +80,7 @@ export default {
       box-shadow: none;
 
       .button {
-        background: white;
+        background: var(--background-color-secondary);
         transform: translateX(
           calc(#{$button-side-length} + (2 *#{$switch-button-border-thickness}))
         );
