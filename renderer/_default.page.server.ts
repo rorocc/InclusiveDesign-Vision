@@ -15,11 +15,11 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
 
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext
-  const title = (documentProps && documentProps.title) || 'Vite SSR app'
-  const desc = (documentProps && documentProps.description) || 'App using Vite + vite-plugin-ssr'
+  const title = (documentProps && documentProps.title) || 'Inclusive Design: Sehstörungen'
+  const desc = (documentProps && documentProps.description) || 'Gestaltungsempfehlungen für barrierefreies Design bezüglich Sehbeeinträchtigungen'
 
   const documentHtml = escapeInject`<!DOCTYPE html>
-    <html lang="en">
+    <html lang="de">
       <head>
         <meta charset="UTF-8" />
         <link rel="icon" href="${logoUrl}" />
