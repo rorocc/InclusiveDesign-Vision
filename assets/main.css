@@ -22,7 +22,7 @@
     --accent-color: #3f3f3f;
     --text-primary-color: #ddd;
       --text-header-color: #ddd;
-      --text-hover-color: #2b2b2b;
+      --text-hover-color: white;
   }
 
     /* Define styles for the root window with high contrast - mode preference */
@@ -34,11 +34,31 @@
         --text-hover-color: #2b2b2b;
     }
 
-    :root .content p{
-        font-size: unset;
+    .normal-fontSize p, .normal-fontSize span, .normal-fontSize nav, .normal-fontSize a{
+        font-size: medium;
     }
 
-  html{
+    .medium-fontSize p, .medium-fontSize span, .medium-fontSize nav, .medium-fontSize a{
+        font-size: larger;
+    }
+
+    .medium-fontSize h3{
+        font-size: x-large;
+    }
+
+    .large-fontSize p, .large-fontSize span, .large-fontSize nav, .large-fontSize a{
+        font-size: xx-large;
+    }
+
+    .large-fontSize h3{
+        font-size: xx-large;
+    }
+
+    .large-fontSize .content h2{
+        font-size: xxx-large;
+    }
+
+html{
       background-color: var(--background-color-primary);
   }
 

@@ -21,6 +21,7 @@
             Simulation
           </a>
         </div>
+        <FontsizeToggle></FontsizeToggle>
         <ColorToggle></ColorToggle>
       </div>
       </div>
@@ -52,6 +53,7 @@
 import Link from './Link.vue'
 import Masthead from '../components/Masthead.vue';
 import ColorToggle from  '../components/ColorToggle.vue';
+import FontsizeToggle from '../components/FontsizeToggle.vue'
 import SwitchButton from '../components/SwitchButton.vue';
 import Layout from '../components/Layout.vue';
 
