@@ -1,16 +1,15 @@
 <template>
 
 <Layout :blurry="layoutBlurry" :showReducedFov="showReducedFov">
+  <div class="bg-rose-700-custom">
+    <div class="container mx-auto pt-20 pb-10">
+      <Masthead />
+    </div>
+  </div>
   <nav class="flex items-center justify-between flex-wrap bg-rose-700-custom p-6">
     <div class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
-    <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <span class="font-semibold text-xl tracking-tigh">Inclusive Design: Sehstörungen</span>
-    </div>
-    <div class="block lg:hidden">
-
-    </div>
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class="text-sm lg:flex-grow">
+        <div class="flex">
           <a href="#overview" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
             Welche Sehbeeinträchtigungen gibt es?
           </a>
@@ -21,23 +20,21 @@
             Simulation
           </a>
         </div>
+      </div>
+      <div class="inline-flex space-x-5">
         <FontsizeToggle></FontsizeToggle>
         <ColorToggle></ColorToggle>
       </div>
-      </div>
-    </nav>
-  <div class="bg-rose-700-custom">
-    <div class="container mx-auto py-20">
-      <Masthead />
     </div>
-  </div>
+  </nav>
+
     <div class="container mx-auto pl-20 py-10">
       <div class="content max-w-prose"><slot /></div>
   </div>
   </Layout>
 <footer class="w-full fixed bottom-0">
   <div class="container mx-auto">
-    <div class="px-6 py-4 w-96 h-auto bg-rose-700-custom simulator-content float-right shadow-xl">
+    <div class="px-6 py-4 lg:w-96 md:w-96 sm:w-full h-auto bg-rose-700-custom simulator-content float-right shadow-xl">
       <h3 class="font-black text-xl mb-3">Simulator</h3>
       <p class="mb-3 tracking-tight">Probiere Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus</p>
       <div>
