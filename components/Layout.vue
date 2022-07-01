@@ -5,7 +5,7 @@
     </div>
 </template>
 
-<script lang="ts">import { checkType } from "vite-plugin-ssr/dist/cjs/utils/checkType";
+<script lang="ts">
 
 
 let mouseEvent;
