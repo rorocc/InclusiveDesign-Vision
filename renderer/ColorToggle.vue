@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="toggleTheme">Color Profile</button>
+    <button @click="toggleTheme">Color Profile: {{this.userThemeString}}</button>
   </div>
 </template>
 
@@ -8,12 +8,15 @@
 export default {
   mounted() {
     const initUserTheme = this.getTheme() || this.getMediaPreference();
+    const initThemeString = this.getThemeString();
+    this.setString(initThemeString)
     this.setTheme(initUserTheme);
   },
 
   data() {
     return {
       userTheme: "light-theme",
+      userThemeString: "Light",
     };
   },
 
@@ -23,13 +26,24 @@ export default {
       const activeTheme = localStorage.getItem("user-theme");
       if (activeTheme === "light-theme") {
         this.setTheme("dark-theme");
+        this.setString("Dark");
       } else {
         this.setTheme("light-theme");
+        this.setString("Light");
       }
     },
 
     getTheme() {
       return localStorage.getItem("user-theme");
+    },
+
+    getThemeString() {
+      return localStorage.getItem("user-theme-string");
+    },
+
+    setString(string){
+      localStorage.setItem("user-theme-string", string);
+      this.userThemeString = string;
     },
 
     setTheme(theme) {

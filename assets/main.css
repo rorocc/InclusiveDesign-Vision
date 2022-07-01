@@ -25,6 +25,20 @@
       --text-hover-color: #2b2b2b;
   }
 
+    /* Define styles for the root window with high contrast - mode preference */
+    :root.high-contrast {
+        --background-color-primary: #1e1e1e;
+        --background-color-secondary: #2d2d30;
+        --accent-color: #3f3f3f;
+        --text-primary-color: #ddd;
+        --text-navbar-color: #222;
+        --text-hover-color: #2b2b2b;
+    }
+
+    :root .content p{
+        font-size: unset;
+    }
+
   html{
       background-color: var(--background-color-primary);
   }
