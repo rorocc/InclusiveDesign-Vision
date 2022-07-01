@@ -108,6 +108,7 @@ function renderLoop() {
 <style>
 .fov-canvas {
     position: absolute;
+    pointer-events: none;
     top: 0;
     left: 0;
     right: 0;

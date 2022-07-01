@@ -1,29 +1,34 @@
 <template>
+
 <Layout :blurry="layoutBlurry" :showReducedFov="showReducedFov">
-<nav class="flex items-center justify-between flex-wrap bg-rose-700 p-6">
-  <div class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
-  <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <span class="font-semibold text-xl tracking-tigh">Inclusive Design: Sehstörungen</span>
-  </div>
-  <div class="block lg:hidden">
+  <nav class="flex items-center justify-between flex-wrap bg-rose-700 p-6">
+    <div class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <span class="font-semibold text-xl tracking-tigh">Inclusive Design: Sehstörungen</span>
     </div>
-  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-    <div class="text-sm lg:flex-grow">
-      <a href="#overview" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4">
-        Welche Sehbeeinträchtigungen gibt es?
-      </a>
-      <a href="#usability" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white mr-4">
-        Usability & Sehbeeinträchtigungen
-      </a>
-      <a href="#simulation" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-white">
-        Simulation
-      </a>
+    <div class="block lg:hidden">
+
     </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="#overview" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+            Welche Sehbeeinträchtigungen gibt es?
+          </a>
+          <a href="#usability" class="block mt-4 lg:inline-block lg:mt-0  mr-4">
+            Usability & Sehbeeinträchtigungen
+          </a>
+          <a href="#simulation" class="block mt-4 lg:inline-block lg:mt-0 ">
+            Simulation
+          </a>
         </div>
-  </div>
-</nav>
-  <div class="container pl-20 py-20 mx-auto bg-rose-700">
-    <Masthead />
+        <ColorToggle></ColorToggle>
+      </div>
+      </div>
+    </nav>
+  <div class="bg-rose-700">
+    <div class="container mx-auto py-20">
+      <Masthead />
+    </div>
   </div>
     <div class="container mx-auto pl-20 py-10">
       <div class="content max-w-prose"><slot /></div>

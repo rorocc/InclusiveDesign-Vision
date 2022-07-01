@@ -1,4 +1,8 @@
 node_modules/
 dist/
 
+<<<<<<< HEAD
 .idea/*
+=======
+.idea/*
+>>>>>>> feature/color-toggle
