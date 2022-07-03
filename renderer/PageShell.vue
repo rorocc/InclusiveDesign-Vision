@@ -23,9 +23,9 @@
   </nav>
 
   <header class=" h-2/3 bg-rose-700-custom overflow-hidden relative">
-    <div class="container mx-auto pt-10 pb-20">
+    <div class="container mx-auto pt-10 pb-10">
       <Masthead />
-      <svg id="svg-eye" class="opacity-20 right-0 scale-125 absolute top-1/3"
+      <svg id="svg-eye" class="opacity-20 right-0 scale-125 absolute top-1/4"
            xmlns="http://www.w3.org/2000/svg"
            xmlns:xlink="http://www.w3.org/1999/xlink"
            width="728px" height="620px">
@@ -48,7 +48,7 @@
   <div class="container mx-auto">
     <div class="pointer-events-auto px-6 py-4 lg:w-96 md:w-96 sm:w-full h-auto bg-rose-700-custom simulator-content float-right shadow-xl">
       <h3 class="font-black text-xl mb-3">Simulator</h3>
-      <p class="mb-3 tracking-tight">Probiere Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus</p>
+      <p class="mb-3 tracking-tight">Probieren Sie Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus:</p>
       <div>
         <SwitchButton @toggle="setBlurry($event)">Verminderte Sehschärfe</SwitchButton>
         <SwitchButton @toggle="showReducedFov = ! showReducedFov">Verringertes Sichtfeld</SwitchButton>
