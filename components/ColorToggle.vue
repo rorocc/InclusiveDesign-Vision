@@ -1,14 +1,14 @@
 <template>
   <div>
     <button class="flex text-left items-center" @click="toggleTheme">
-      <span v-if="this.userTheme === 'light-theme'" class="material-icons-outlined toggleIcon mr-2">light_mode</span>
-      <span v-if="this.userTheme === 'dark-theme'" class="material-icons-outlined toggleIcon mr-2">dark_mode</span>
-      <span v-if="this.userTheme === 'high-contrast'" class="material-icons-outlined toggleIcon mr-2">contrast</span>
+      <span v-if="userTheme === 'light-theme'" class="material-icons-outlined toggleIcon mr-2">light_mode</span>
+      <span v-if="userTheme === 'dark-theme'" class="material-icons-outlined toggleIcon mr-2">dark_mode</span>
+      <span v-if="userTheme === 'high-contrast'" class="material-icons-outlined toggleIcon mr-2">contrast</span>
       <div class="toggleButtonCircle">
         <p>Farbeinstellung</p>
-        <span v-if="this.userTheme === 'light-theme'">Hell</span>
-        <span v-if="this.userTheme === 'dark-theme'">Dunkel</span>
-        <span v-if="this.userTheme === 'high-contrast'">Hoher Kontrast</span>
+        <span v-if="userTheme === 'light-theme'">Hell</span>
+        <span v-if="userTheme === 'dark-theme'">Dunkel</span>
+        <span v-if="userTheme === 'high-contrast'">Hoher Kontrast</span>
       </div>
     </button>
   </div>
