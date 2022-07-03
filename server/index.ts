@@ -24,7 +24,7 @@ async function startServer() {
     app.use(viteDevServer.middlewares)
   }
 
-  const renderPage = createPageRenderer({ base: '', viteDevServer, isProduction, root })
+  const renderPage = createPageRenderer({ base: process.env.BASE_URL, viteDevServer, isProduction, root })
   app.get('*', async (req, res, next) => {
     const url = req.originalUrl
     const pageContextInit = {

@@ -6,7 +6,7 @@
     "build": "vite build && vite build --ssr",
     "server": "ts-node ./server",
     "server:prod": "cross-env NODE_ENV=production ts-node ./server",
-    "build:static" : "vite build && vite build --ssr && vite-plugin-ssr prerender"
+    "build:static" : "export BASE_URL=://rorocc.github.io/InclusiveDesign-Vision/ && vite build && vite build --ssr && vite-plugin-ssr prerender"
   },
   "dependencies": {
     "@types/compression": "^1.7.2",
