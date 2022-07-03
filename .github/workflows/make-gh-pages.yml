@@ -4,9 +4,6 @@ on:
     # We only run this GitHub action upon new commits to `master`
     branches:
       - master
-    # We only run this GitHub action if there are changes in any directory
-    paths:
-      - './**/*'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
