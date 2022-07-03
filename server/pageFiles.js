@@ -12,7 +12,7 @@ const pageFiles = {
     return require("./assets/_default.page.client.0e45cb48.js");
   }) },
   ".page.server": { "/renderer/_default.page.server.ts": () => Promise.resolve().then(function() {
-    return require("./assets/_default.page.server.0057b431.js");
+    return require("./assets/_default.page.server.d08db1e7.js");
   }) },
   ".page.route": {}
 };

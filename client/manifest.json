@@ -1,6 +1,6 @@
 {
   "renderer/_default.page.client.ts": {
-    "file": "assets/renderer/_default.page.client.ts.50d371ff.js",
+    "file": "assets/renderer/_default.page.client.ts.3e4be25e.js",
     "src": "renderer/_default.page.client.ts",
     "isEntry": true,
     "dynamicImports": [
@@ -10,7 +10,7 @@
       "renderer/_default.page.server.ts"
     ],
     "css": [
-      "assets/renderer/_default.page.client.ts.b83029bc.css"
+      "assets/renderer/_default.page.client.ts.a0b3fe77.css"
     ],
     "assets": [
       "assets/dm-sans-latin-400.951a3b8e.woff2",
@@ -28,7 +28,7 @@
     ]
   },
   "renderer/_error.page.vue": {
-    "file": "assets/_error.page.ced04f92.js",
+    "file": "assets/_error.page.c900d1cb.js",
     "src": "renderer/_error.page.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -36,7 +36,7 @@
     ]
   },
   "pages/about/index.page.vue": {
-    "file": "assets/index.page.17852dd6.js",
+    "file": "assets/index.page.25bdce03.js",
     "src": "pages/about/index.page.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -44,7 +44,7 @@
     ]
   },
   "pages/index/index.page.vue": {
-    "file": "assets/index.page.b30af7b0.js",
+    "file": "assets/index.page.c06d812a.js",
     "src": "pages/index/index.page.vue",
     "isDynamicEntry": true,
     "imports": [
