@@ -6,13 +6,13 @@ const pageFiles = {
   }), "/pages/about/index.page.vue": () => Promise.resolve().then(function() {
     return require("./assets/index.page.026123cf.js");
   }), "/pages/index/index.page.vue": () => Promise.resolve().then(function() {
-    return require("./assets/index.page.39d34793.js");
+    return require("./assets/index.page.62ad2d7d.js");
   }) },
   ".page.client": { "/renderer/_default.page.client.ts": () => Promise.resolve().then(function() {
     return require("./assets/_default.page.client.0e45cb48.js");
   }) },
   ".page.server": { "/renderer/_default.page.server.ts": () => Promise.resolve().then(function() {
-    return require("./assets/_default.page.server.69005344.js");
+    return require("./assets/_default.page.server.0057b431.js");
   }) },
   ".page.route": {}
 };
