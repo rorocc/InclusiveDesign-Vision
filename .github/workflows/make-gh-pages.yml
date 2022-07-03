@@ -1,12 +1,9 @@
 name: Build Github Pages
 on:
   push:
-    # We only run this GitHub action upon new commits to `master`
+    # We only run this GitHub action upon new commits to `main`
     branches:
       - main
-    # We only run this GitHub action if there are changes in any directory
-    paths:
-      - '**.vue'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
