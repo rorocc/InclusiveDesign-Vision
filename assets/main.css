@@ -127,3 +127,7 @@ html{
   .content-block{
       @apply my-6;
   }
+
+  #svg-eye{
+      fill: var(--text-header-color);
+  }

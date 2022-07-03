@@ -1,12 +1,9 @@
 <template>
 
 <Layout :blurry="layoutBlurry" :showReducedFov="showReducedFov">
-  <header class="h-full bg-rose-700-custom">
-    <div class="container mx-auto pt-20 pb-10">
-      <Masthead />
-    </div>
-  </header>
-  <nav class="items-center justify-between flex-wrap bg-rose-700-custom p-6">
+  <div class="h-screen">
+
+    <nav class="items-center justify-between flex-wrap bg-rose-700-custom p-6">
     <div class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="flex">
@@ -28,8 +25,22 @@
     </div>
   </nav>
 
+  <header class=" h-2/3 bg-rose-700-custom overflow-hidden relative">
+    <div class="container mx-auto pt-10 pb-20">
+      <Masthead />
+      <svg id="svg-eye" class="opacity-20 right-0 scale-125 absolute top-1/3"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           width="728px" height="620px">
+        <path fill-rule="evenodd"
+              d="M0.837,345.977 C0.837,345.977 177.878,124.186 391.405,143.422 C604.931,162.659 674.982,318.970 674.982,318.970 C674.982,318.970 609.948,480.230 415.296,475.820 C220.644,471.410 160.804,347.16 160.804,347.16 C160.804,347.16 176.341,300.966 284.414,248.335 C392.487,195.705 492.509,250.752 491.124,320.9 C489.739,389.265 419.212,410.530 384.133,398.953 C349.54,387.377 307.419,355.449 404.908,274.304 C262.572,274.360 277.732,486.956 459.962,432.193 C582.707,376.486 506.507,209.995 431.916,200.553 C369.599,182.614 265.620,171.67 116.138,338.706 C236.695,547.890 452.691,515.293 452.691,515.293 C452.691,515.293 630.42,506.252 727.958,323.125 C619.94,119.226 423.935,104.726 389.327,103.950 C354.720,103.174 121.694,74.49 0.837,345.977 Z"/>
+      </svg>
+    </div>
+  </header>
+
     <div class="container mx-auto pl-20 py-10">
       <div class="content max-w-prose"><slot /></div>
+  </div>
   </div>
   </Layout>
 <footer class="w-full fixed bottom-0 pointer-events-none">
