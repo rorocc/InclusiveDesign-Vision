@@ -108,7 +108,7 @@
         </div>
         <div class="article-heading ">
           <h2 id="grauerstar">Grauer Star (Katarakt)</h2>
-          <div class="grid min-w-0 space-y-1">
+          <div class="grid grid-flow-row md:grid-flow-col min-w-0 space-y-1">
             <span class="betrifft">Auswirkungen:</span>
             <span class="pill max-w-min py-auto">Sehschärfe</span>
             <span class="pill max-w-min py-auto">Lichtsensitivität</span>
