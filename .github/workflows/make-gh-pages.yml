@@ -16,9 +16,6 @@ jobs:
         with:
           version: 6
 
-      - name: Setup
-        run: pnpm run setup
-
       - name: Install
         run: pnpm install
 
