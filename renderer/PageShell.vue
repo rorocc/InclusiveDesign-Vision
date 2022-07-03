@@ -32,9 +32,9 @@
       <div class="content max-w-prose"><slot /></div>
   </div>
   </Layout>
-<footer class="w-full fixed bottom-0">
+<footer class="w-full fixed bottom-0 pointer-events-none">
   <div class="container mx-auto">
-    <div class="px-6 py-4 lg:w-96 md:w-96 sm:w-full h-auto bg-rose-700-custom simulator-content float-right shadow-xl">
+    <div class="pointer-events-auto px-6 py-4 lg:w-96 md:w-96 sm:w-full h-auto bg-rose-700-custom simulator-content float-right shadow-xl">
       <h3 class="font-black text-xl mb-3">Simulator</h3>
       <p class="mb-3 tracking-tight">Probiere Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus</p>
       <div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="layout text-base overflow-visible w-full" ref="layout" @mousemove="mousemove" :class="{ blurry: blurry }">
+    <div class="layout z-50 text-base overflow-visible w-full" ref="layout" @mousemove="mousemove" :class="{ blurry: blurry }">
         <canvas class="fov-canvas" ref="fovCanvas"></canvas>
         <slot></slot>
     </div>

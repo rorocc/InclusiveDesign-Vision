@@ -91,7 +91,7 @@ html{
       color: var(--text-header-color);
   }
 
-  a:hover{
+  nav a:hover{
       color: var(--text-hover-color);
   }
 
