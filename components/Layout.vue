@@ -1,6 +1,6 @@
 <template>
+    <canvas class="fov-canvas" ref="fovCanvas"></canvas>
     <div class="layout text-base overflow-visible w-full" ref="layout" @mousemove="mousemove" :class="{ blurry: blurry }">
-        <canvas class="fov-canvas" ref="fovCanvas"></canvas>
         <slot></slot>
     </div>
 </template>
@@ -107,7 +107,7 @@ function renderLoop() {
 
 <style>
 .fov-canvas {
-    position: absolute;
+    position: fixed;
     pointer-events: none;
     top: 0;
     left: 0;
@@ -115,6 +115,7 @@ function renderLoop() {
     bottom: 0;
     height: 100%;
     width: 100%;
+    z-index:10;
 }
 .layout {
     transition: filter 0.5s;
