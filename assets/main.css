@@ -94,3 +94,36 @@ html{
   a:hover{
       color: var(--text-hover-color);
   }
+
+  .content h1:after{
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 8px;
+      border-radius: 2px;
+  }
+
+  .content h1:after{
+      background: var(--background-color-secondary);
+  }
+
+  .content h1{
+      @apply text-3xl font-extrabold;
+      padding: 0 0 0 20px;
+      color: var(--text-primary-color);
+      position: relative;
+  }
+
+  .content h2{
+      @apply text-2xl font-bold pt-4;
+  }
+
+  .content h3{
+      @apply text-xl font-medium pt-2;
+  }
+
+  .content-block{
+      @apply my-6;
+  }

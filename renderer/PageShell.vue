@@ -1,12 +1,12 @@
 <template>
 
 <Layout :blurry="layoutBlurry" :showReducedFov="showReducedFov">
-  <div class="bg-rose-700-custom">
+  <header class="h-full bg-rose-700-custom">
     <div class="container mx-auto pt-20 pb-10">
       <Masthead />
     </div>
-  </div>
-  <nav class="flex items-center justify-between flex-wrap bg-rose-700-custom p-6">
+  </header>
+  <nav class="items-center justify-between flex-wrap bg-rose-700-custom p-6">
     <div class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="flex">
@@ -71,4 +71,5 @@ function setBlurry(isBlurry: boolean) {
 .layout.blurry {
   filter: blur(1.5px);
 }
+
 </style>
