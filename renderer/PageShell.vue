@@ -13,9 +13,6 @@
           <a href="#usability" class="block mt-4 lg:inline-block lg:mt-0  mr-4">
             Usability & Sehbeeinträchtigungen
           </a>
-          <a href="#simulation" class="block mt-4 lg:inline-block lg:mt-0 ">
-            Simulation
-          </a>
         </div>
       </div>
       <div class="inline-flex space-x-5">
@@ -38,9 +35,13 @@
     </div>
   </header>
 
+
     <div class="container mx-auto pl-20 py-10">
-      <div class="content max-w-prose"><slot /></div>
-  </div>
+
+      <div class="content">
+                <slot /></div>
+    </div>
+
   </div>
   </Layout>
 <footer class="w-full fixed bottom-0 pointer-events-none">
