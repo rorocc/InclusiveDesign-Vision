@@ -72,13 +72,13 @@ function renderCanvas() {
     ctx.fillStyle = 'black';
     ctx.fillRect(0,0,fovCanvas.width, fovCanvas.height)
     ctx.globalCompositeOperation = "destination-out"
-    ctx.filter = 'blur(20px)';
+    ctx.filter = 'blur(60px)';
     if (mouseEvent) {
             drawCircle({
                 ctx,
             x: mouseEvent.clientX,
             y: mouseEvent.clientY,
-            radius: fovCanvas.width/4,
+            radius: fovCanvas.width/4.5,
             fill: "black"
         });
     }
