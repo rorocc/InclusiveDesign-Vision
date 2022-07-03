@@ -6,7 +6,7 @@ on:
       - master
     # We only run this GitHub action if there are changes in any directory
     paths:
-      - **
+      - */**
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
