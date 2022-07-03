@@ -1,5 +1,43 @@
 <template>
 
+  <PageSection class="max-w-prose">
+
+    <div class="flex intro-block">
+      <div class="flex-none intro-block-icon text-center ">
+        <span class="material-icons-outlined  h-full inline-flex items-center text-5xl">manage_search</span>
+      </div>
+      <div>
+        <Paragraph>
+          Sehbeeinträchtigungen können dazu führen, dass Menschen bei der Nutzung von Software oder Webseiten eingeschränkt sind. Dies kann unter anderem daran liegen, dass sie z. B. Texte nicht vernünftig lesen können oder Inhalte nicht so dargestellt werden, dass diese wahrgenommen werden können.
+        </Paragraph>
+      </div>
+    </div>
+
+    <div class="flex intro-block">
+      <div class="flex-none intro-block-icon text-center ">
+        <span class="material-icons-outlined  h-full inline-flex items-center text-5xl">palette</span>
+      </div>
+      <div>
+        <Paragraph>
+          Durch eine angemessene barrierefreie Gestaltung ist es aber möglich, diesen Einschränkungen entgegenzuwirken und die Inhalte so zugänglich wie möglich zu machen. Auf dieser Webseite wollen wir einen Überblick über die verschiedenen Sehbeeinträchtigungen geben und präsentieren, wie durch das bewusste Gestalten oder Bieten von individuellen Anpassungsmöglichkeiten auf die Bedürfnisse von betroffenen Personen eingegangen werden kann.
+        </Paragraph>
+      </div>
+    </div>
+
+    <div class="flex intro-block">
+      <div class="flex-none intro-block-icon text-center ">
+        <span class="material-icons-outlined  h-full inline-flex items-center text-5xl">try</span>
+      </div>
+      <div>
+        <Paragraph>
+          <b>Neugierig, wie sich solche Beeinträchtigungen überhaupt auswirken?</b>
+          Durch unseren Simulator unten rechts kann ausprobiert werden, wie bspw. eine verminderte Sehschärfe oder ein verringertes Sichtfeld bei der Betrachtung dieser Webseite aussehen würde.
+        </Paragraph>
+      </div>
+    </div>
+
+  </PageSection>
+
   <div class="grid w-full grid-cols-1 lg:grid-cols-3 gap-0">
 
     <div class="col-span-2 max-w-prose">
@@ -70,11 +108,11 @@
         </div>
         <div class="article-heading ">
           <h2 id="grauerstar">Grauer Star (Katarakt)</h2>
-          <div class="">
+          <div class="grid min-w-0 space-y-1">
             <span class="betrifft">Auswirkungen:</span>
-            <span class="pill py-auto">Sehschärfe</span>
-            <span class="pill py-auto">Lichtsensitivität</span>
-            <span class="pill py-auto">Kontrastsensitivität</span>
+            <span class="pill max-w-min py-auto">Sehschärfe</span>
+            <span class="pill max-w-min py-auto">Lichtsensitivität</span>
+            <span class="pill max-w-min py-auto">Kontrastsensitivität</span>
           </div>
         </div>
         <Paragraph>Bei einem Grauen Star ist die Augenlinse getrübt. Dadurch kommt es zu verschwommenem Sehen und einer höheren Empfindlichkeit für Blendungen. Dies kommt durch einen reduzierten Bildkontrast und Betroffene nehmen ihr Sichtfeld wie durch einen Nebel wahr.</Paragraph>
@@ -164,7 +202,7 @@
       </PageSection>
     </div>
 
-    <div class="">
+    <aside class="hidden lg:block">
       <nav class="section-nav sticky">
         <ol>
           <li><a href="#overview">Welche Sehbeeinträchtigungen gibt es?</a>
@@ -189,7 +227,7 @@
           <li><a href="#sources">Mehr zum Thema?</a></li>
         </ol>
       </nav>
-    </div>
+    </aside>
 
   </div>
 </template>
@@ -204,6 +242,16 @@ import Paragraph from '../../components/Paragraph.vue';
 </script>
 
 <style>
+
+.intro-block{
+  @apply pb-3 align-middle items-center;
+}
+
+.intro-block-icon {
+  color: var(--background-color-primary);
+  background-color: var(--background-color-secondary);
+  @apply h-32 w-32 mr-3;
+}
 
 .article-heading{
   @apply items-center pt-4 w-full justify-between;
