@@ -4,15 +4,15 @@
       <span class="material-icons-outlined toggleIcon mr-2">format_size</span>
       <div class="toggleButtonCircle">
         <p>Schriftgröße</p>
-        <span v-if="this.fontSize === 'normal-fontSize'">Normal</span>
-        <span v-if="this.fontSize === 'medium-fontSize'">Mittel</span>
-        <span v-if="this.fontSize === 'large-fontSize'">Groß</span>
+        <span v-if="fontSize === 'normal-fontSize'">Normal</span>
+        <span v-if="fontSize === 'medium-fontSize'">Mittel</span>
+        <span v-if="fontSize === 'large-fontSize'">Groß</span>
       </div>
      </button>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   mounted() {
     const initUserSize = this.getSize() || 'normal-fontSize';
