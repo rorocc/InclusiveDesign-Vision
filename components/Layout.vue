@@ -137,12 +137,14 @@ function renderCanvas() {
                 ctx.globalCompositeOperation = "darken"
                 ctx.filter = 'blur(10px)';
 
-                while (currentXPos < fovCanvas.width) {
-                    while (currentYPos < fovCanvas.height) {
-                        ctx.drawImage(fovPatternImg,currentXPos,currentXPos);
-                        currentYPos = (currentYPos + fovPatternImg.height)
-                        ctx.drawImage(fovPatternImg,currentXPos,0);
-                        currentXPos = (currentXPos + fovPatternImg.width)
+                if(fovPatternImg.complete) {
+                        while (currentXPos < fovCanvas.width) {
+                            while (currentYPos < fovCanvas.height) {
+                                ctx.drawImage(fovPatternImg,currentXPos,currentXPos);
+                            currentYPos = (currentYPos + fovPatternImg.height)
+                            ctx.drawImage(fovPatternImg,currentXPos,0);
+                            currentXPos = (currentXPos + fovPatternImg.width)
+                        }
                     }
                 }
             }
