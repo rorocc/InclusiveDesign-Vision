@@ -1,6 +1,6 @@
 {
   "renderer/_default.page.client.ts": {
-    "file": "assets/renderer/_default.page.client.ts.85c1fc6e.js",
+    "file": "assets/renderer/_default.page.client.ts.9eaadbed.js",
     "src": "renderer/_default.page.client.ts",
     "isEntry": true,
     "dynamicImports": [
@@ -10,9 +10,10 @@
       "renderer/_default.page.server.ts"
     ],
     "css": [
-      "assets/renderer/_default.page.client.ts.1901b1c6.css"
+      "assets/renderer/_default.page.client.ts.f2f158c4.css"
     ],
     "assets": [
+      "assets/fovpattern.db2ec3ff.png",
       "assets/dm-sans-latin-400.951a3b8e.woff2",
       "assets/dm-sans-latin-400.1f9e55b7.woff",
       "assets/dm-sans-latin-400italic.1dfb75f2.woff2",
@@ -28,7 +29,7 @@
     ]
   },
   "renderer/_error.page.vue": {
-    "file": "assets/_error.page.548c0fff.js",
+    "file": "assets/_error.page.2dfc0229.js",
     "src": "renderer/_error.page.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -36,7 +37,7 @@
     ]
   },
   "pages/about/index.page.vue": {
-    "file": "assets/index.page.1a04bd39.js",
+    "file": "assets/index.page.765e0846.js",
     "src": "pages/about/index.page.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -44,7 +45,7 @@
     ]
   },
   "pages/index/index.page.vue": {
-    "file": "assets/index.page.03ed3f3c.js",
+    "file": "assets/index.page.0384aaea.js",
     "src": "pages/index/index.page.vue",
     "isDynamicEntry": true,
     "imports": [
