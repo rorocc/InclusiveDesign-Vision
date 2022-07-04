@@ -1,5 +1,5 @@
 <template>
-<section class="mb-20">
+<article class="mb-20">
     <slot></slot>
-</section>
+</article>
 </template>
