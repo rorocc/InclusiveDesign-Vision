@@ -67,6 +67,8 @@
         <Paragraph>Bei einer Ametropie hat das Auge ein Problem, durch die Form des Auges und/oder der Hornhaut das Licht auf der Retina zu fokussieren. Dadurch wird das Gesehene unscharf.
           Eine Ametropie kann in den folgenden verschiedenen Formen auftreten.
         </Paragraph>
+        <div class="flex simulator-hinweis"><span class="material-icons-outlined  h-full inline-flex items-center text-3xl">try</span><Paragraph>Erfahren Sie die Auswirkungen von verringerter Sehschärfe im Simulator.</Paragraph></div>
+
         <div class="ml-4">
           <div class="content-block">
             <h3>Kurzsichtigkeit (Myopie)</h3>
@@ -124,6 +126,7 @@
           </div>
         </div>
         <Paragraph>Der Begriff Glaukom fasst verschiedene Augenerkrankungen zusammen, die eine nicht umkehrbare Schädigung des Sehnervs bezeichnen. Bei Menschen mit einem Glaukom treten im Sichtfeld “blinde Flecken” auf. Dabei beginnt der Ausfall meist am Randbereich des wahrgenommenem Bildes und verteilt sich im Verlauf der Erkrankung auf das gesamte Sichtfeld.</Paragraph>
+        <div class="flex simulator-hinweis"><span class="material-icons-outlined  h-full inline-flex items-center text-3xl">try</span><Paragraph>Erfahren Sie die Auswirkungen von Sichtfeldeinschränkungen im Simulator.</Paragraph></div>
       </PageSection>
 
       <PageSection id="usability">
@@ -270,6 +273,13 @@ export default {
 </script>
 
 <style>
+.simulator-hinweis{
+  @apply ml-4 space-x-2 my-2 font-bold;
+}
+
+.simulator-hinweis span{
+  color: var(--background-color-secondary)
+}
 
 .contrast-quiz{
   background-color: var(--text-header-color);
