@@ -130,19 +130,20 @@ function renderCanvas() {
                 });
             }
 
-            if(fovPatternImg.complete && propsExternal.showOtherFovLoss) {
-                let currentXPos = -(fovCanvas.width/2);
-                let currentYPos = -(fovCanvas.height/2);
+            if(fovPatternImg.complete && propsExternal.showOtherFovLoss.value) {
+                let currentXPos = 0;
+                let currentYPos = 0;
 
-                ctx.globalCompositeOperation = "darken"
+                ctx.globalCompositeOperation = "destination-over"
                 ctx.filter = 'blur(10px)';
 
-                while (currentXPos < fovCanvas.width*2) {
-                    while (currentYPos < fovCanvas.height*2) {
-                        ctx.drawImage(fovPatternImg,currentXPos,currentYPos);
+                while (currentXPos < fovCanvas.width + fovPatternImg.width) {
+                    while (currentYPos < fovCanvas.height + fovPatternImg.height) {
+                        ctx.drawImage(fovPatternImg, currentXPos,currentYPos, fovPatternImg.width, fovPatternImg.height);
                         currentYPos = (currentYPos + fovPatternImg.height);
                     }
-                    currentXPos = (currentXPos + fovPatternImg.width);
+                    currentYPos = 0;
+                    currentXPos += fovPatternImg.width;
                 }
             }
         }
