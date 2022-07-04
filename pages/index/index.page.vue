@@ -186,7 +186,7 @@
           Weiterhin ist für einige Menschen schwierig Buchstaben zu unterscheiden wenn diese nah am Rand sind. Durch frei einstellbare Seitenränder und/oder einstellbare Umrandungen um einzelne Textblöcke zu unterscheiden kann die Lesbarkeit weiterhin gesteigert werden.
         </Paragraph>
 
-        <h2 id="individuelleElemente">Steuern von individuellen Elementen</h2>
+        <h2 id="individuelleElemente">Steuerung von individuellen Elementen</h2>
         <Paragraph>Durch das Verändern von Schriftgröße kann es dazu kommen, dass gewisse Elemente wie bspw. Überschriften zu groß werden um den eigentlichen Text gut lesen zu können. Weiterhin präferieren einige Menschen es, den Haupttext größer einzustellen als Überschriften oder haben einen Stil gefunden, mit dem sie persönlich die beste Lesbarkeit haben. Deswegen kann es helfen, Nutzenden zu erlauben einzelne Elemente wie eben Überschriften, Text oder Listen individuell anzupassen.
         </Paragraph>
 
@@ -198,10 +198,10 @@
 
         <h2 id="einstellungsmoeglichkeiten">Einstellungsmöglichkeiten richtig einbinden</h2>
         <Paragraph>
-          Durch das Verändern von bspw. Größe oder Zeilenabstand kann es passieren, dass Elemente aus dem Sichtfeld verschwinden oder auch Überlappen und unlesbar werden. Deswegen ist es wichtig, eine Größenanpassung so zu gestalten, dass alle Elemente in der richtigen Form bleiben und keine Interface-Elemente versteckt werden, die der Nutzende sehen sollte.
+          Durch das Verändern von bspw. Größe oder Zeilenabstand kann es passieren, dass Elemente aus dem Sichtfeld verschwinden oder auch überlappen und unlesbar werden. Deswegen ist es wichtig, eine Größenanpassung so zu gestalten, dass alle Elemente in der richtigen Form bleiben und keine Interface-Elemente versteckt werden, die der Nutzende sehen sollte.
         </Paragraph>
         <Paragraph>
-          Da es weiterhin für einige Nutzende schwierig ist, Text auf einem Bildschirm zu lesen sollte es ermöglicht werden, den Text jederzeit druckbar zu machen und auch die individuellen Einstellungen die getroffen worden sind zu berücksichtigen.
+          Da es weiterhin für einige Nutzende schwierig ist, Text auf einem Bildschirm zu lesen sollte es ermöglicht werden, den Text jederzeit druckbar zu machen und dabei auch die individuellen Einstellungen die getroffen worden sind zu berücksichtigen.
           Die meisten Betriebssysteme oder Browser ermöglichen Nutzenden es, Standardeinstellungen nach ihrer persönlichen Präferenz zu treffen. Diese sollten von einer barrierefreien Website automatisch übernommen werden können.
         </Paragraph>
 
@@ -239,7 +239,7 @@
               <li><a href="#lesefluss">Lesefluss</a></li>
               <li><a href="#wahrnehmung">Wahrnehmung</a></li>
               <li><a href="#textabstand">Text- und Zeilenabstand zum Lesen</a></li>
-              <li><a href="#individuelleElemente">Steuern von individuellen Elementen</a></li>
+              <li><a href="#individuelleElemente">Steuerung von individuellen Elementen</a></li>
               <li><a href="#betrachtungsfeld">Betrachtungsfeld und Nähe</a></li>
               <li><a href="#einstellungsmoeglichkeiten">Einstellungsmöglichkeiten richtig einbinden</a></li>
               <li><a href="#allgemeine">Allgemeine Hinweise</a></li>

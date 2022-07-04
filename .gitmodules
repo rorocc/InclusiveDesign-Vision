@@ -1,0 +1,3 @@
+[submodule "vendor/context-filter-polyfill"]
+	path = vendor/context-filter-polyfill
+	url = https://github.com/davidenke/context-filter-polyfill
