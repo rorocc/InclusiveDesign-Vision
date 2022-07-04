@@ -18,7 +18,7 @@
       </div>
       <div>
         <Paragraph>
-          Durch eine angemessene barrierefreie Gestaltung ist es aber möglich, diesen Einschränkungen entgegenzuwirken und die Inhalte so zugänglich wie möglich zu machen. Auf dieser Webseite wollen wir einen Überblick über die verschiedenen Sehbeeinträchtigungen geben und präsentieren, wie durch das bewusste Gestalten oder Bieten von individuellen Anpassungsmöglichkeiten auf die Bedürfnisse von betroffenen Personen eingegangen werden kann.
+          Durch eine angemessene barrierefreie Gestaltung ist es aber möglich, diesen Einschränkungen entgegenzuwirken um die Inhalte so zugänglich wie möglich zu machen. Auf dieser Webseite wollen wir einen Überblick über die verschiedenen Sehbeeinträchtigungen geben und präsentieren, wie durch das bewusste Gestalten oder Bieten von individuellen Anpassungsmöglichkeiten auf die Bedürfnisse von betroffenen Personen eingegangen werden kann.
         </Paragraph>
       </div>
     </div>
@@ -160,7 +160,7 @@
             <h3 v-if="isQuizClicked === 'y'">Leider nicht!</h3>
             <h3 v-if="isQuizClicked === 'n'">Korrekt!</h3>
             <Paragraph>Die vorliegende Farbkombination hat ein Kontrastverhältnis von 2.17:1. Für eine barrierefreie Gestaltung empfiehlt WCAG mindestens ein Verhältnis von 3:1.</Paragraph>
-            <Source><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">w3.org - WCAG 2.1 Kontrastminimum </a></Source>
+            <div class="quiz-src"><Source><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">w3.org - WCAG 2.1 Kontrastminimum </a></Source></div>
           </div>
         </div>
 
@@ -170,7 +170,7 @@
           Dies kann bspw. dadurch gewährleistet werden, dass Texte die durch das Einstellen einer größeren Schriftart so angeordnet werden, dass Nutzende nur vertikal scrollen müssen und nicht horizontal und vertikal.
         </Paragraph>
         <Paragraph>
-          Weiterhin kann es schwierig sein, Texten oder Inhalten mit mehreren Spalten zu folgen, wenn sie am Ende eines Absatzes wieder nach oben scrollen müssen. Hier kann es helfen, Nutzenden anzubieten den Text in einer Spalte darzustellen.
+          Weiterhin kann es schwierig sein, Texten oder Inhalten mit mehreren Spalten zu folgen, wenn am Ende eines Absatzes wieder nach oben gescrollt werden muss. Hier kann es helfen, Nutzenden anzubieten den Text in einer Spalte darzustellen.
         </Paragraph>
 
         <h2 id="wahrnehmung">Wahrnehmung</h2>
@@ -183,10 +183,10 @@
           Mithilfe von variabel einstellbaren Abständen zwischen Zeilen, Buchstaben und Wörtern können Texte lesbarer gestaltet werden. Auch eine freie Einstellung der Textausrichtung kann dabei unterstützen.
         </Paragraph>
         <Paragraph>
-          Weiterhin ist für einige Menschen schwierig Buchstaben zu unterscheiden wenn diese nah am Rand sind. Durch frei einstellbare Seitenränder und/oder einstellbare Umrandungen um einzelne Textblöcke zu unterscheiden kann die Lesbarkeit weiterhin gesteigert werden.
+          Weiterhin ist es für einige Menschen schwierig, Buchstaben zu unterscheiden, wenn diese nah am Rand sind. Durch frei einstellbare Seitenränder und/oder einstellbare Umrandungen um einzelne Textblöcke zu unterscheiden kann die Lesbarkeit weiterhin gesteigert werden.
         </Paragraph>
 
-        <h2 id="individuelleElemente">Steuern von individuellen Elementen</h2>
+        <h2 id="individuelleElemente">Steuerung von individuellen Elementen</h2>
         <Paragraph>Durch das Verändern von Schriftgröße kann es dazu kommen, dass gewisse Elemente wie bspw. Überschriften zu groß werden um den eigentlichen Text gut lesen zu können. Weiterhin präferieren einige Menschen es, den Haupttext größer einzustellen als Überschriften oder haben einen Stil gefunden, mit dem sie persönlich die beste Lesbarkeit haben. Deswegen kann es helfen, Nutzenden zu erlauben einzelne Elemente wie eben Überschriften, Text oder Listen individuell anzupassen.
         </Paragraph>
 
@@ -198,10 +198,10 @@
 
         <h2 id="einstellungsmoeglichkeiten">Einstellungsmöglichkeiten richtig einbinden</h2>
         <Paragraph>
-          Durch das Verändern von bspw. Größe oder Zeilenabstand kann es passieren, dass Elemente aus dem Sichtfeld verschwinden oder auch Überlappen und unlesbar werden. Deswegen ist es wichtig, eine Größenanpassung so zu gestalten, dass alle Elemente in der richtigen Form bleiben und keine Interface-Elemente versteckt werden, die der Nutzende sehen sollte.
+          Durch das Verändern von bspw. Größe oder Zeilenabstand kann es passieren, dass Elemente aus dem Sichtfeld verschwinden oder auch überlappen und unlesbar werden. Deswegen ist es wichtig, eine Größenanpassung so zu gestalten, dass alle Elemente in der richtigen Form bleiben und keine Interface-Elemente versteckt werden, die der Nutzende sehen sollte.
         </Paragraph>
         <Paragraph>
-          Da es weiterhin für einige Nutzende schwierig ist, Text auf einem Bildschirm zu lesen sollte es ermöglicht werden, den Text jederzeit druckbar zu machen und auch die individuellen Einstellungen die getroffen worden sind zu berücksichtigen.
+          Da es weiterhin für einige Nutzende schwierig ist, Text auf einem Bildschirm zu lesen sollte es ermöglicht werden, den Text jederzeit druckbar zu machen und dabei auch die individuellen Einstellungen die getroffen worden sind zu berücksichtigen.
           Die meisten Betriebssysteme oder Browser ermöglichen Nutzenden es, Standardeinstellungen nach ihrer persönlichen Präferenz zu treffen. Diese sollten von einer barrierefreien Website automatisch übernommen werden können.
         </Paragraph>
 
@@ -239,7 +239,7 @@
               <li><a href="#lesefluss">Lesefluss</a></li>
               <li><a href="#wahrnehmung">Wahrnehmung</a></li>
               <li><a href="#textabstand">Text- und Zeilenabstand zum Lesen</a></li>
-              <li><a href="#individuelleElemente">Steuern von individuellen Elementen</a></li>
+              <li><a href="#individuelleElemente">Steuerung von individuellen Elementen</a></li>
               <li><a href="#betrachtungsfeld">Betrachtungsfeld und Nähe</a></li>
               <li><a href="#einstellungsmoeglichkeiten">Einstellungsmöglichkeiten richtig einbinden</a></li>
               <li><a href="#allgemeine">Allgemeine Hinweise</a></li>
@@ -281,19 +281,25 @@ export default {
   color: var(--background-color-secondary)
 }
 
+.quiz-src p, .quiz-src span{
+  color: var(--background-color-primary);
+}
+
 .contrast-quiz{
-  background-color: var(--text-header-color);
+  color: var(--background-color-primary);
+  background-color: var(--text-primary-color);
   @apply w-full ml-4 p-4;
 }
 
 .contrast-quiz button{
-  color: var(--background-color-primary);
-  background-color: var(--text-primary-color);
+  color: var(--text-primary-color);
+  background-color: var(--background-color-primary);
   @apply py-1 px-12 rounded-3xl;
 }
 
 .color-block{
   background-color: #1E1B1A;
+  border: 1px solid var(--background-color-primary);
   @apply w-36 h-36 align-middle items-center;
 }
 
