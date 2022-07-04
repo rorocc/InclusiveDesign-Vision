@@ -1,6 +1,6 @@
 {
   "renderer/_default.page.client.ts": {
-    "file": "assets/renderer/_default.page.client.ts.190e5d8a.js",
+    "file": "assets/renderer/_default.page.client.ts.c91597b0.js",
     "src": "renderer/_default.page.client.ts",
     "isEntry": true,
     "dynamicImports": [
@@ -29,7 +29,7 @@
     ]
   },
   "renderer/_error.page.vue": {
-    "file": "assets/_error.page.fe2fd859.js",
+    "file": "assets/_error.page.1b435828.js",
     "src": "renderer/_error.page.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -37,7 +37,7 @@
     ]
   },
   "pages/about/index.page.vue": {
-    "file": "assets/index.page.345f771f.js",
+    "file": "assets/index.page.a82f6001.js",
     "src": "pages/about/index.page.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -45,7 +45,7 @@
     ]
   },
   "pages/index/index.page.vue": {
-    "file": "assets/index.page.e87d57b4.js",
+    "file": "assets/index.page.39cf6c62.js",
     "src": "pages/index/index.page.vue",
     "isDynamicEntry": true,
     "imports": [
