@@ -5,6 +5,12 @@
 ## Github Pages
 
 [https://rorocc.github.io/InclusiveDesign-Vision](https://rorocc.github.io/InclusiveDesign-Vision)
+
+## Vorschauserver starten
+
+- `npm install`
+- `npm run prod`
+
 ## Development Server starten
 
 - `npm install`
