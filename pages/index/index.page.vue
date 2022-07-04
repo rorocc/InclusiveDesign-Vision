@@ -264,7 +264,7 @@ import Paragraph from '../../components/Paragraph.vue';
 export default {
   data() {
     return {
-      isQuizClicked: null
+      isQuizClicked: false
     }
   },
 }
