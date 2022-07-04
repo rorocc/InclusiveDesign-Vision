@@ -216,9 +216,10 @@
         <h1>Mehr zum Thema?</h1>
         <Paragraph>Hier finden Sie unsere Quellen und weitere Informationen zu Sehbeeinträchtigungen.</Paragraph>
         <div class="grid">
-          <Source><a href="https://www.w3.org/TR/low-vision-needs/">W3.org - Accessibility Requirements for People with Low Vision</a></Source>
-          <Source><a href="https://uxdesign.cc/web-accessibility-for-visual-impairment-a8ee4bb3aef8">uxdesign.cc - Web accessibility for visual impairments</a></Source>
-          <Source><a href="https://www.tk.de/techniker/gesundheit-und-medizin/behandlungen-und-medizin/augenerkrankungen-2018768">TK.de - Augenerkrankungen</a></Source>
+          <Source><a href="https://www.w3.org/TR/low-vision-needs/" target="_blank">W3.org - Accessibility Requirements for People with Low Vision</a></Source>
+          <Source><a href="https://uxdesign.cc/web-accessibility-for-visual-impairment-a8ee4bb3aef8" target="_blank">uxdesign.cc - Web accessibility for visual impairments</a></Source>
+          <Source><a href="https://www.tk.de/techniker/gesundheit-und-medizin/behandlungen-und-medizin/augenerkrankungen-2018768" target="_blank">TK.de - Augenerkrankungen</a></Source>
+          <Source><a href="http://www.inclusivedesigntoolkit.com/UCvision/vision.html" target="_blank">inclusivedesigntoolkit.com - Inclusive Design Toolkit: Vision</a></Source>
         </div>
       </PageSection>
     </div>
