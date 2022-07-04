@@ -42,8 +42,15 @@
       <div class="content" role="main">
                 <slot /></div>
     </div>
-
+    <footer class="items-center justify-between flex-wrap bg-rose-700-custom p-6">
+      <nav aria-label="Navigation in der Fussleiste" class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
+        <a class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+          Impressum
+        </a>
+      </nav>
+    </footer>
   </div>
+
   </Layout>
 <footer class="w-full fixed bottom-0 pointer-events-none z-20">
   <div class="container mx-auto">
