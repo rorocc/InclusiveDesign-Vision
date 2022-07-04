@@ -15,7 +15,7 @@ async function render(pageContext: PageContextBuiltIn & PageContext) {
 
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext
-  const title = (documentProps && documentProps.title) || 'Inclusive Design: Sehstörungen'
+  const title = (documentProps && documentProps.title) || 'Inclusive Design: Barrierefrei gestalten für Menschen mit Sehbeeinträchtigungen'
   const desc = (documentProps && documentProps.description) || 'Gestaltungsempfehlungen für barrierefreies Design bezüglich Sehbeeinträchtigungen'
 
   const documentHtml = escapeInject`<!DOCTYPE html>
