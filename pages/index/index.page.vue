@@ -2,8 +2,8 @@
   <PageSection class="max-w-prose">
 
     <div class="flex intro-block">
-      <div class="flex-none intro-block-icon text-center ">
-        <span class="material-icons-outlined  h-full inline-flex items-center text-5xl">manage_search</span>
+      <div aria-label="Piktogramm mit Lupe über Text" class="flex-none intro-block-icon text-center ">
+        <span aria-hidden="true" class="material-icons-outlined  h-full inline-flex items-center text-5xl">manage_search</span>
       </div>
       <div>
         <Paragraph>
@@ -13,8 +13,8 @@
     </div>
 
     <div class="flex intro-block">
-      <div class="flex-none intro-block-icon text-center ">
-        <span class="material-icons-outlined  h-full inline-flex items-center text-5xl">palette</span>
+      <div aria-label="Piktogramm mit Farbpalette" class="flex-none intro-block-icon text-center ">
+        <span aria-hidden="true" class="material-icons-outlined  h-full inline-flex items-center text-5xl">palette</span>
       </div>
       <div>
         <Paragraph>
@@ -24,8 +24,8 @@
     </div>
 
     <div class="flex intro-block">
-      <div class="flex-none intro-block-icon text-center ">
-        <span class="material-icons-outlined  h-full inline-flex items-center text-5xl">try</span>
+      <div aria-label="Piktogramm mit Stern in einer Sprechblase (Ausprobieren). Dieses Zeichen wird im Text verwendet um anzuzeigen, dass eine Sehbeeinträchtigung auf der Website simuliert werden kann." class="flex-none intro-block-icon text-center ">
+        <span aria-hidden="true" class="material-icons-outlined  h-full inline-flex items-center text-5xl">try</span>
       </div>
       <div>
         <Paragraph>
@@ -67,7 +67,7 @@
         <Paragraph>Bei einer Ametropie hat das Auge ein Problem, durch die Form des Auges und/oder der Hornhaut das Licht auf der Retina zu fokussieren. Dadurch wird das Gesehene unscharf.
           Eine Ametropie kann in den folgenden verschiedenen Formen auftreten.
         </Paragraph>
-        <div class="flex simulator-hinweis"><span class="material-icons-outlined  h-full inline-flex items-center text-3xl">try</span><Paragraph>Erfahren Sie die Auswirkungen von verringerter Sehschärfe im Simulator.</Paragraph></div>
+        <div class="flex simulator-hinweis" aria-label="Piktogramm: Ausprobieren"><span aria-hidden="true" class="material-icons-outlined  h-full inline-flex items-center text-3xl">try</span><Paragraph>Erfahren Sie die Auswirkungen von verringerter Sehschärfe im Simulator.</Paragraph></div>
 
         <div class="ml-4">
           <div class="content-block">
@@ -126,7 +126,7 @@
           </div>
         </div>
         <Paragraph>Der Begriff Glaukom fasst verschiedene Augenerkrankungen zusammen, die eine nicht umkehrbare Schädigung des Sehnervs bezeichnen. Bei Menschen mit einem Glaukom treten im Sichtfeld “blinde Flecken” auf. Dabei beginnt der Ausfall meist am Randbereich des wahrgenommenem Bildes und verteilt sich im Verlauf der Erkrankung auf das gesamte Sichtfeld.</Paragraph>
-        <div class="flex simulator-hinweis"><span class="material-icons-outlined  h-full inline-flex items-center text-3xl">try</span><Paragraph>Erfahren Sie die Auswirkungen von Sichtfeldeinschränkungen im Simulator.</Paragraph></div>
+        <div class="flex simulator-hinweis" aria-label="Piktogramm: Ausprobieren"><span aria-hidden="true" class="material-icons-outlined  h-full inline-flex items-center text-3xl">try</span><Paragraph>Erfahren Sie die Auswirkungen von Sichtfeldeinschränkungen im Simulator.</Paragraph></div>
       </PageSection>
 
       <PageSection id="usability">

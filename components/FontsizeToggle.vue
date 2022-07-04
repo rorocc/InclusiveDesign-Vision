@@ -1,7 +1,7 @@
 <template>
   <div>
-    <button class="flex text-left items-center" @click="toggleTheme">
-      <span class="material-icons-outlined toggleIcon mr-2">format_size</span>
+    <button aria-label="Taste: Schriftgröße verstellen" class="flex text-left items-center" @click="toggleTheme">
+      <span aria-hidden="true" class="material-icons-outlined toggleIcon mr-2">format_size</span>
       <div class="toggleButtonCircle">
         <p>Schriftgröße</p>
         <span v-if="fontSize === 'normal-fontSize'">Normal</span>
