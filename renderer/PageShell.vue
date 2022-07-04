@@ -57,7 +57,14 @@
       </nav>
     </footer>
   </div>
-
+  <transition name="fade">
+    <div role="button" id="pagetop" class="upButton fixed left-0 bottom-0" v-show="scY > 300" @click="toTop">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+           stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </div>
+  </transition>
   </Layout>
 <footer class="w-full fixed bottom-0 pointer-events-none z-20">
   <div class="container mx-auto">
@@ -108,7 +115,45 @@ function setBlurry(isBlurry: boolean) {
 }
 </script>
 
+<script lang="ts">
+export default{
+  data() {
+    return {
+      scTimer: 0,
+      scY: 0,
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll: function () {
+      if (this.scTimer) return;
+      this.scTimer = setTimeout(() => {
+        this.scY = window.scrollY;
+        clearTimeout(this.scTimer);
+        this.scTimer = 0;
+      }, 100);
+    },
+    toTop: function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    },
+  }
+}
+</script>
+
 <style>
+.upButton{
+  background-color: var(--background-color-secondary);
+}
+
+.upButton svg{
+  stroke: var(--background-color-primary)
+}
+
 .layout {
   transition: filter .5s;
 }
