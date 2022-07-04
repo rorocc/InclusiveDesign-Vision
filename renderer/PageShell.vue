@@ -55,15 +55,21 @@
 <footer class="w-full fixed bottom-0 pointer-events-none z-20">
   <div class="container mx-auto">
     <div class="pointer-events-auto px-6 py-4 lg:w-96 md:w-96 sm:w-full h-auto bg-rose-700-custom simulator-content float-right shadow-xl">
-      <h3 class="font-black text-xl mb-3">Simulator</h3>
-      <p class="mb-3 tracking-tight">Probieren Sie Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus:</p>
-      <div>
+      <Accordion>
+      <template v-slot:title>
+        <h3 class="font-black text-xl mb-3">Simulator</h3>
+      </template>
+      <template v-slot:content>
+        <p class="mb-3 tracking-tight">Probieren Sie Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus:</p>
         <h4 class="font-bold mb-2">Sehschärfe</h4>
         <SwitchButton @toggle="setBlurry($event)">Verminderte Sehschärfe</SwitchButton>
         <h4 class="font-bold mb-2">Beeinträchtigtes Sichtfeld</h4>
         <SwitchButton :switchVal="showReducedFov" @toggle="showReducedFov = ! showReducedFov">Periphärer Sichtfeldverlust</SwitchButton>
         <SwitchButton :switchVal="showCentralFovLoss" @toggle="showCentralFovLoss = ! showCentralFovLoss">Zentraler Sichtfeldverlust</SwitchButton>  
         <SwitchButton :switchVal="showOtherFovLoss" @toggle="showOtherFovLoss = ! showOtherFovLoss">Andersartiger Sichtfeldverlust</SwitchButton>
+      </template>
+      </Accordion>
+      <div>
       </div>
     </div>
   </div>
@@ -77,6 +83,7 @@ import ColorToggle from  '../components/ColorToggle.vue';
 import FontsizeToggle from '../components/FontsizeToggle.vue'
 import SwitchButton from '../components/SwitchButton.vue';
 import Layout from '../components/Layout.vue';
+import Accordion from '../components/Akkordeon.vue';
 import { ref } from 'vue';
 
 const layoutBlurry = ref(false);
