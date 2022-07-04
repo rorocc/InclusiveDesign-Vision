@@ -3,6 +3,8 @@ import { createApp } from './app'
 import type { PageContext } from './types'
 import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client'
 
+// import '../vendor/context-filter-polyfill/src/index'
+
 hydrate()
 
 async function hydrate() {

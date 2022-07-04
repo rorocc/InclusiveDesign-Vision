@@ -140,9 +140,9 @@ function renderCanvas() {
                 while (currentXPos < fovCanvas.width*2) {
                     while (currentYPos < fovCanvas.height*2) {
                         ctx.drawImage(fovPatternImg,currentXPos,currentYPos);
-                        currentYPos = (currentYPos + fovPatternImg.height)
+                        currentYPos = (currentYPos + fovPatternImg.height);
                     }
-                    currentXPos = (currentXPos + fovPatternImg.width)
+                    currentXPos = (currentXPos + fovPatternImg.width);
                 }
             }
         }
