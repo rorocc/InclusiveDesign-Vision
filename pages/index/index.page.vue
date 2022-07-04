@@ -1,5 +1,4 @@
 <template>
-
   <PageSection class="max-w-prose">
 
     <div class="flex intro-block">
@@ -143,6 +142,25 @@
           Weiterhin können durch Farbsinnstörungen Einschränkungen beim Betrachten entstehen, weswegen es für eine Barrierefreiheit wichtig ist, nicht auf Farben zurückzugreifen um verschiedene Elemente zu unterscheiden.
         </Paragraph>
 
+        <div class="contrast-quiz flex justify-center space-x-5">
+          <div class="flex-none text-center color-block">
+            <span class="h-full inline-flex items-center text-5xl">Abc</span>
+          </div>
+          <div  v-if="!isQuizClicked">
+            <h3>Was denken Sie?</h3>
+            <Paragraph>Ist der vorliegende Farbkontrast für eine barrierefreie Gestaltung ausreichend?</Paragraph>
+            <div class="flex space-x-8 my-2">
+              <button @click="isQuizClicked = 'y'">Ja</button><button @click="isQuizClicked = 'n'">Nein</button>
+            </div>
+          </div>
+          <div v-else>
+            <h3 v-if="isQuizClicked === 'y'">Leider nicht!</h3>
+            <h3 v-if="isQuizClicked === 'n'">Korrekt!</h3>
+            <Paragraph>Die vorliegende Farbkombination hat ein Kontrastverhältnis von 2.17:1. Für eine barrierefreie Gestaltung empfiehlt WCAG mindestens ein Verhältnis von 3:1.</Paragraph>
+            <Source><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">w3.org - WCAG 2.1 Kontrastminimum </a></Source>
+          </div>
+        </div>
+
         <h2 id="lesefluss">Lesefluss</h2>
         <Paragraph>
           Beim Tracking geht es darum, den Zeilen des Textes folgen zu können und den Text so anzuordnen, dass er von verschiedenen Menschen so gelesen werden kann, wie es für sie am besten funktioniert.
@@ -202,8 +220,8 @@
       </PageSection>
     </div>
 
-    <aside class="hidden lg:block">
-      <nav class="section-nav sticky">
+    <aside aria-label="Inhaltsverzeichnis" class="hidden lg:block">
+      <nav aria-label="Inhaltsverzeichnis" class="section-nav sticky">
         <ol>
           <li><a href="#overview">Welche Sehbeeinträchtigungen gibt es?</a>
             <ol>
@@ -241,7 +259,37 @@ import Paragraph from '../../components/Paragraph.vue';
 
 </script>
 
+<script>
+export default {
+  data() {
+    return {
+      isQuizClicked: false
+    }
+  },
+}
+</script>
+
 <style>
+
+.contrast-quiz{
+  background-color: var(--text-header-color);
+  @apply w-full ml-4 p-4;
+}
+
+.contrast-quiz button{
+  color: var(--background-color-primary);
+  background-color: var(--text-primary-color);
+  @apply py-1 px-12 rounded-3xl;
+}
+
+.color-block{
+  background-color: #1E1B1A;
+  @apply w-36 h-36 align-middle items-center;
+}
+
+.color-block span{
+  color: #A80000;
+}
 
 .intro-block{
   @apply pb-3 align-middle items-center;
