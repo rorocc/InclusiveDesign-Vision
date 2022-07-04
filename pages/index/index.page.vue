@@ -282,18 +282,20 @@ export default {
 }
 
 .contrast-quiz{
-  background-color: var(--text-header-color);
+  color: var(--background-color-primary);
+  background-color: var(--text-primary-color);
   @apply w-full ml-4 p-4;
 }
 
 .contrast-quiz button{
-  color: var(--background-color-primary);
-  background-color: var(--text-primary-color);
+  color: var(--text-primary-color);
+  background-color: var(--background-color-primary);
   @apply py-1 px-12 rounded-3xl;
 }
 
 .color-block{
   background-color: #1E1B1A;
+  border: 1px solid var(--background-color-primary);
   @apply w-36 h-36 align-middle items-center;
 }
 
