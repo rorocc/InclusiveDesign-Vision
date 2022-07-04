@@ -1,5 +1,4 @@
 <template>
-
   <PageSection class="max-w-prose">
 
     <div class="flex intro-block">
@@ -147,16 +146,16 @@
           <div class="flex-none text-center color-block">
             <span class="h-full inline-flex items-center text-5xl">Abc</span>
           </div>
-          <div  v-if="!this.isQuizClicked">
+          <div  v-if="!isQuizClicked">
             <h3>Was denken Sie?</h3>
             <Paragraph>Ist der vorliegende Farbkontrast für eine barrierefreie Gestaltung ausreichend?</Paragraph>
             <div class="flex space-x-8 my-2">
-              <button @click="this.isQuizClicked = 'y'">Ja</button><button @click="this.isQuizClicked = 'n'">Nein</button>
+              <button @click="isQuizClicked = 'y'">Ja</button><button @click="isQuizClicked = 'n'">Nein</button>
             </div>
           </div>
           <div v-else>
-            <h3 v-if="this.isQuizClicked === 'y'">Leider nicht!</h3>
-            <h3 v-if="this.isQuizClicked === 'n'">Korrekt!</h3>
+            <h3 v-if="isQuizClicked === 'y'">Leider nicht!</h3>
+            <h3 v-if="isQuizClicked === 'n'">Korrekt!</h3>
             <Paragraph>Die vorliegende Farbkombination hat ein Kontrastverhältnis von 2.17:1. Für eine barrierefreie Gestaltung empfiehlt WCAG mindestens ein Verhältnis von 3:1.</Paragraph>
             <Source><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">w3.org - WCAG 2.1 Kontrastminimum </a></Source>
           </div>
