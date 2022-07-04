@@ -43,10 +43,17 @@
                 <slot /></div>
     </div>
     <footer class="items-center justify-between flex-wrap bg-rose-700-custom p-6">
-      <nav aria-label="Navigation in der Fussleiste" class="container mx-auto pl-10 flex items-center justify-between flex-wrap">
-        <a class="block mt-4 lg:inline-block lg:mt-0 mr-4">
-          Impressum
-        </a>
+      <nav aria-label="Impressum in der Fussleiste" class="container mx-auto pl-10">
+        <h1 class="font-bold mb-5 text-xl">Impressum</h1>
+        <Paragraph>
+          <strong>Chris Rock, Bjoern Emkes, Jacob Mellin</strong>
+        </Paragraph>
+        <Paragraph>
+          Projektarbeit im Rahmen der Veranstaltung „Inclusive Design“ der Universität zu Lübeck
+        </Paragraph>
+        <Paragraph>
+          <em>Hier würden noch Angaben nach dem Telemediengesetz/DSGVO stehen.</em>
+        </Paragraph>
       </nav>
     </footer>
   </div>
@@ -84,6 +91,7 @@ import FontsizeToggle from '../components/FontsizeToggle.vue'
 import SwitchButton from '../components/SwitchButton.vue';
 import Layout from '../components/Layout.vue';
 import Accordion from '../components/Akkordeon.vue';
+import Paragraph from '../components/Paragraph.vue';
 import { ref } from 'vue';
 
 const layoutBlurry = ref(false);

@@ -222,19 +222,6 @@
           <Source><a href="http://www.inclusivedesigntoolkit.com/UCvision/vision.html" target="_blank">inclusivedesigntoolkit.com - Inclusive Design Toolkit: Vision</a></Source>
         </div>
       </PageSection>
-
-      <PageSection id="impressum">
-        <h1>Impressum</h1>
-        <Paragraph>
-          <strong>Chris Rock, Bjoern Emkes, Jacob Mellin</strong>
-        </Paragraph>
-        <Paragraph>
-          Projektarbeit im Rahmen der Veranstaltung „Inclusive Design“ der Universität zu Lübcek
-        </Paragraph>
-        <Paragraph>
-          <em>Hier würden noch angaben nach dem Telemediengesetz/DSGVO stehen.</em>
-        </Paragraph>
-      </PageSection>
     </div>
 
 
