@@ -160,7 +160,7 @@
             <h3 v-if="isQuizClicked === 'y'">Leider nicht!</h3>
             <h3 v-if="isQuizClicked === 'n'">Korrekt!</h3>
             <Paragraph>Die vorliegende Farbkombination hat ein Kontrastverhältnis von 2.17:1. Für eine barrierefreie Gestaltung empfiehlt WCAG mindestens ein Verhältnis von 3:1.</Paragraph>
-            <Source><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">w3.org - WCAG 2.1 Kontrastminimum </a></Source>
+            <div class="quiz-src"><Source><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">w3.org - WCAG 2.1 Kontrastminimum </a></Source></div>
           </div>
         </div>
 
@@ -279,6 +279,10 @@ export default {
 
 .simulator-hinweis span{
   color: var(--background-color-secondary)
+}
+
+.quiz-src p, .quiz-src span{
+  color: var(--background-color-primary);
 }
 
 .contrast-quiz{
