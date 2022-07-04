@@ -221,7 +221,21 @@
           <Source><a href="https://www.tk.de/techniker/gesundheit-und-medizin/behandlungen-und-medizin/augenerkrankungen-2018768">TK.de - Augenerkrankungen</a></Source>
         </div>
       </PageSection>
+
+      <PageSection id="impressum">
+        <h1>Impressum</h1>
+        <Paragraph>
+          <strong>Chris Rock, Bjoern Emkes, Jacob Mellin</strong>
+        </Paragraph>
+        <Paragraph>
+          Projektarbeit im Rahmen der Veranstaltung „Inclusive Design“ der Universität zu Lübcek
+        </Paragraph>
+        <Paragraph>
+          <em>Hier würden noch angaben nach dem Telemediengesetz/DSGVO stehen.</em>
+        </Paragraph>
+      </PageSection>
     </div>
+
 
     <aside aria-label="Inhaltsverzeichnis" class="hidden lg:block">
       <nav aria-label="Inhaltsverzeichnis" class="section-nav sticky">
