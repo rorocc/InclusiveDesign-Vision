@@ -40,6 +40,10 @@ html{
         --text-hover-color: #2b2b2b;
     }
 
+    .normal-fontSize .intro-block-icon, .medium-fontSize .intro-block-icon,.large-fontSize .intro-block-icon{
+        @apply text-5xl;
+    }
+
     .normal-fontSize p, .normal-fontSize span, .normal-fontSize nav, .normal-fontSize a, .normal-fontSize .switch-button-label, {
         font-size: medium;
     }
@@ -48,7 +52,8 @@ html{
         font-size: 2rem;
     }
 
-    .medium-fontSize p, .medium-fontSize span, .medium-fontSize nav, .medium-fontSize a, .medium-fontSize .switch-button-label{
+    .medium-fontSize p, .medium-fontSize span, .medium-fontSize nav,
+    .medium-fontSize a, .medium-fontSize .switch-button-label, .medium-fontSize li{
         font-size: larger;
     }
 
@@ -60,7 +65,12 @@ html{
         font-size: x-large;
     }
 
-    .large-fontSize p, .large-fontSize span, .large-fontSize nav, .large-fontSize a, .large-fontSize .switch-button-label{
+    .medium-fontSize .section-nav li{
+        font-size: large;
+    }
+
+    .large-fontSize p, .large-fontSize .content span, .large-fontSize nav, .large-fontSize a,
+    .large-fontSize .switch-button-label, .large-fontSize li{
         font-size: xx-large;
     }
 
@@ -68,12 +78,16 @@ html{
         font-size: 6rem;
     }
 
-    .large-fontSize h3{
+    .large-fontSize .content h3{
         font-size: xx-large;
     }
 
-    .large-fontSize .content h2{
+    .large-fontSize .content h2, .large-fontSize .content h1{
         font-size: xxx-large;
+    }
+
+    .large-fontSize .section-nav{
+        display: none;
     }
 
 html{
