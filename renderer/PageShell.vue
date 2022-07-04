@@ -1,6 +1,6 @@
 <template>
 
-<Layout :blurry="layoutBlurry" :showReducedFov="showReducedFov">
+<Layout :blurry="layoutBlurry" :showReducedFov="showReducedFov" :showCentralFovLoss="showCentralFovLoss" :showOtherFovLoss="showOtherFovLoss">
   <div class="h-screen">
 
     <nav class="items-center justify-between flex-wrap bg-rose-700-custom p-6">
@@ -44,14 +44,18 @@
 
   </div>
   </Layout>
-<footer class="w-full fixed bottom-0 pointer-events-none">
+<footer class="w-full fixed bottom-0 pointer-events-none z-20">
   <div class="container mx-auto">
     <div class="pointer-events-auto px-6 py-4 lg:w-96 md:w-96 sm:w-full h-auto bg-rose-700-custom simulator-content float-right shadow-xl">
       <h3 class="font-black text-xl mb-3">Simulator</h3>
       <p class="mb-3 tracking-tight">Probieren Sie Simulationen verschiedener Sehbeeinträchtigungen auf dieser Website aus:</p>
       <div>
+        <h4 class="font-bold mb-2">Sehschärfe</h4>
         <SwitchButton @toggle="setBlurry($event)">Verminderte Sehschärfe</SwitchButton>
-        <SwitchButton @toggle="showReducedFov = ! showReducedFov">Verringertes Sichtfeld</SwitchButton>
+        <h4 class="font-bold mb-2">Beeinträchtigtes Sichtfeld</h4>
+        <SwitchButton :switchVal="showReducedFov" @toggle="showReducedFov = ! showReducedFov">Periphärer Sichtfeldverlust</SwitchButton>
+        <SwitchButton :switchVal="showCentralFovLoss" @toggle="showCentralFovLoss = ! showCentralFovLoss">Zentraler Sichtfeldverlust</SwitchButton>  
+        <SwitchButton :switchVal="showOtherFovLoss" @toggle="showOtherFovLoss = ! showOtherFovLoss">Andersartiger Sichtfeldverlust</SwitchButton>
       </div>
     </div>
   </div>
@@ -65,11 +69,16 @@ import ColorToggle from  '../components/ColorToggle.vue';
 import FontsizeToggle from '../components/FontsizeToggle.vue'
 import SwitchButton from '../components/SwitchButton.vue';
 import Layout from '../components/Layout.vue';
-
 import { ref } from 'vue';
 
 const layoutBlurry = ref(false);
 const showReducedFov = ref(false);
+const showCentralFovLoss = ref(false);
+const showOtherFovLoss = ref(false);
+
+let group = [
+  ''
+];
 
 function setBlurry(isBlurry: boolean) {
   layoutBlurry.value = isBlurry;

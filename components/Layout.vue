@@ -6,9 +6,15 @@
 </template>
 
 <script lang="ts">
-
-
 let mouseEvent;
+let fovCanvas;
+let ctx;
+let layout;
+let propsExternal;
+let fovPatternImg;
+
+import { toRefs, toRef } from 'vue'
+import fovPatternImgUrl from '../assets/fovpattern.png'
 
 export default {
     data() {
@@ -17,37 +23,48 @@ export default {
     },
     props: {
         blurry: Boolean,
-        showReducedFov: Boolean
+        showReducedFov: Boolean,
+        showCentralFovLoss: Boolean,
+        showOtherFovLoss: Boolean
     },
     methods: {
         mousemove(event) {
             mouseEvent = event;
+        },
+        renderWhenEnabled() {
+            if(this.showReducedFov || this.showCentralFovLoss || this.showOtherFovLoss) {
+                startRendering();
+            } else {
+                stopRendering();
+            }
         }
     },
     mounted() {
         initCanvas(this.$refs.fovCanvas, this.$refs.layout);
     },
     watch: {
-        showReducedFov(newB, oldB) {
-            console.log(this.showReducedFov);
-            if (newB) {
-                startRendering();
-            } else {
-                stopRendering();
-            }
+        showReducedFov() {
+            this.renderWhenEnabled();
+        },
+        showCentralFovLoss() {
+            this.renderWhenEnabled();
+        },
+        showOtherFovLoss() {
+            this.renderWhenEnabled();
         }
+    },
+    setup(props) {
+        propsExternal = toRefs(props);
     }
-}
-
-let fovCanvas;
-let ctx;
-let layout;
+};
 
 function initCanvas(fovCanvasRef, layoutRef) {
-    console.log(fovCanvasRef);
     fovCanvas = fovCanvasRef;
     ctx = fovCanvas.getContext('2d');
     layout = layoutRef;
+
+    fovPatternImg = new Image();
+    fovPatternImg.src = fovPatternImgUrl;
 }
 
 let rendering = false;
@@ -67,22 +84,69 @@ function drawCircle(obj) {
 }
 
 function renderCanvas() {
-    fovCanvas.height = fovCanvas.clientHeight;
-    fovCanvas.width = fovCanvas.clientWidth;
-    ctx.fillStyle = 'black';
-    ctx.fillRect(0,0,fovCanvas.width, fovCanvas.height)
-    ctx.globalCompositeOperation = "destination-out"
-    ctx.filter = 'blur(60px)';
-    if (mouseEvent) {
-            drawCircle({
-                ctx,
-            x: mouseEvent.clientX,
-            y: mouseEvent.clientY,
-            radius: fovCanvas.width/4.5,
-            fill: "black"
-        });
-    }
-}
+            fovCanvas.height = fovCanvas.clientHeight;
+            fovCanvas.width = fovCanvas.clientWidth;
+            ctx.fillStyle = 'black';
+
+            let fovRadius = fovCanvas.width/4.5;
+
+            // In the case that both central fov loss and outer fov loss are shown
+            // is shown, make the outer fov a bit bigger 
+            if(propsExternal.showCentralFovLoss.value) {
+                fovRadius = fovCanvas.width/3
+            }
+
+            ctx.clearRect(0, 0, fovCanvas.width, fovCanvas.height);
+
+            if(propsExternal.showReducedFov.value) {
+                ctx.fillRect(0,0,fovCanvas.width, fovCanvas.height);
+            }
+
+            ctx.filter = 'blur(60px)';
+
+            ctx.globalCompositeOperation = "destination-out"
+
+            if (mouseEvent) {
+                if(propsExternal.showReducedFov.value) {
+                    drawCircle({
+                            ctx,
+                        x: mouseEvent.clientX,
+                        y: mouseEvent.clientY,
+                        radius: fovRadius,
+                        fill: "black"
+                    });
+                }
+            }
+
+            ctx.globalCompositeOperation = "destination-over"
+
+            if(propsExternal.showCentralFovLoss.value) {
+                drawCircle({
+                    ctx,
+                    x: mouseEvent.clientX,
+                    y: mouseEvent.clientY,
+                    radius: fovCanvas.width/5,
+                    fill: "black"
+                });
+            }
+
+            if(fovPatternImg.complete && propsExternal.showOtherFovLoss) {
+                let currentXPos = -(fovCanvas.width/2);
+                let currentYPos = -(fovCanvas.height/2);
+
+                ctx.globalCompositeOperation = "darken"
+                ctx.filter = 'blur(10px)';
+
+                while (currentXPos < fovCanvas.width) {
+                    while (currentYPos < fovCanvas.height) {
+                        ctx.drawImage(fovPatternImg,currentXPos,currentXPos);
+                        currentYPos = (currentYPos + fovPatternImg.height)
+                        ctx.drawImage(fovPatternImg,currentXPos,0);
+                        currentXPos = (currentXPos + fovPatternImg.width)
+                    }
+                }
+            }
+        }
 
 function startRendering() {
     rendering = true;

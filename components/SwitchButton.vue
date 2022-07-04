@@ -3,7 +3,7 @@
     <div class="switch-button" :class="{ enabled: isEnabled }" @click="toggle" :style="{'--color': color}">
       <div class="button"></div>
     </div>
-    <div class="switch-button-label  font-semibold">
+    <div class="switch-button-label font-semibold">
       <slot></slot>
     </div>
   </div>
@@ -29,6 +29,11 @@ export default {
             type: String,
             required: false,
             default: '#FFFFFF'
+        },
+        switchVal: {
+          type: Boolean,
+          required: false,
+          default: false
         }
     },
 
